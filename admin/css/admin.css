@@ -1,0 +1,185 @@
+/* Main settings container */
+.doodle-mac-settings {
+	max-width: 800px;
+	background: #fff;
+	padding: 25px;
+	margin-top: 20px;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Form elements */
+.doodle-mac-settings .form-table th {
+	width: 250px;
+	padding-left: 0;
+	font-weight: 600;
+}
+
+.doodle-mac-settings .form-table td {
+	padding: 15px 10px;
+	vertical-align: top;
+}
+
+/* Checkbox groups */
+.mac-checkbox-group {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 12px;
+}
+
+.mac-checkbox-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+
+.mac-checkbox-item.mac-default-hidden {
+	display: none;
+}
+
+.mac-checkbox-item input[type="checkbox"] {
+	margin-top: 3px;
+}
+
+.mac-checkbox-item input[disabled] + label {
+    opacity: 1 !important;
+    cursor: default;
+}
+
+.mac-checkbox-item .description {
+    color: #2271b1;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 3px;
+}
+
+/* Plugin list */
+.mac-plugin-list {
+	max-height: 300px;
+	overflow-y: auto;
+	border: 1px solid #ddd;
+	padding: 15px;
+	background: white;
+	border-radius: 4px;
+}
+
+.mac-plugin-list .mac-checkbox-item {
+	margin-bottom: 8px;
+	border: none;
+	padding: 5px;
+	background: transparent;
+}
+
+.mac-plugin-list code {
+	font-size: 0.85em;
+	color: #666;
+	display: block;
+	margin-top: 3px;
+}
+
+/* Textareas */
+.doodle-mac-settings textarea {
+	width: 100%;
+	height: 150px;
+	font-family: monospace;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+}
+
+/* Descriptions */
+.doodle-mac-settings .description {
+	color: #646970;
+	font-style: italic;
+	margin-top: 8px;
+}
+
+/* Beta badge styling */
+.mac-beta-badge {
+	display: inline-block;
+	background: #f0b849;
+	color: #1d2327;
+	font-size: 0.7em;
+	padding: 2px 5px;
+	border-radius: 3px;
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+/* ========== NEW STYLES ========== */
+/* Hardcoded protected plugin styling */
+.mac-hardcoded {
+	opacity: 0.8;
+}
+
+.mac-hardcoded-badge {
+	display: inline-block;
+	margin-left: 8px;
+	padding: 2px 6px;
+	background: #d63638;
+	color: white;
+	border-radius: 3px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+
+/* Status indicators */
+.mac-status-active {
+	color: #00a32a;
+	font-weight: bold;
+}
+
+.mac-status-inactive {
+	color: #d63638;
+	font-weight: bold;
+}
+
+/* Info box */
+.mac-info-box {
+	margin-top: 30px;
+	padding: 20px;
+	background: #f8f9fa;
+	border-left: 4px solid #2271b1;
+	border-radius: 2px;
+}
+
+.mac-info-box h3 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* Plugin item with badge */
+.mac-plugin-item-with-badge {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Better badge alignment */
+.mac-checkbox-item label {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 782px) {
+	.doodle-mac-settings .form-table th,
+	.doodle-mac-settings .form-table td {
+		display: block;
+		width: 100%;
+	}
+	
+	.doodle-mac-settings .form-table th {
+		padding-bottom: 5px;
+	}
+	
+	.mac-checkbox-group {
+		grid-template-columns: 1fr;
+	}
+}

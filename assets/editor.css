@@ -1,0 +1,14 @@
+/**
+ * Manager Access Control - Global Admin Styles for Managers
+ * 
+ * Scope:
+ *  Loaded throughout WordPress admin for all restricted users (managers)
+ *  Applied globally in admin area (except plugin settings page)
+ *  Does not load for administrators or regular users
+ * 
+ */
+
+/* Always hide Manager Access dropdown */
+#wpadminbar li#wp-admin-bar-aam {
+	display: none !important;
+}
